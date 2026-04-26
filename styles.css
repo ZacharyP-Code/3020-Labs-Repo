@@ -1,35 +1,36 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(#1a1a1a, #0f0f0f);
-    color: #f4f4f4;
+    background-color: #ffffff; /* pure white */
+    color: #000000; /* black text */
     margin: 0;
     padding: 0;
 }
-
 /* Header */
 
 header {
-    background-color: #111;
+    background-color: #11132e;
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid gold;
+    border-bottom: 3px solid #4da3ff; /* arcane glow */
 }
 
 header h1 {
-    color: gold;
-    margin: 0;
+    color: #a8d0ff; /* glowing arcane text */
 }
-
+header h1 {
+    color: #a8d0ff; /* glowing arcane text */
+    text-shadow: 0 0 8px #4da3ff; /* arcane glow */
+}
 /* Navigation */
 
 nav {
-    background-color: #111;
+    background-color: #14173a;
     padding: 15px;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #a8d0ff;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -37,8 +38,8 @@ nav a {
 }
 
 nav a:hover {
-    color: gold;
-    text-shadow: 0 0 8px gold;
+    color: #d0e4ff;
+    text-shadow: 0 0 8px #4da3ff;
 }
 
 /* Headings */
@@ -77,13 +78,27 @@ img:hover {
 /* Footer */
 
 footer {
-    background-color: #111;
+    background-color: #11132e;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
-    border-top: 2px solid gold;
+    border-top: 2px solid #4da3ff;
 }
 
 footer p {
-    color: #bbb;
+    color: #a8d0ff;
+}
+
+
+/* Default (light mode) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode class */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
 }
